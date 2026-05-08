@@ -1,8 +1,9 @@
 import { BasePage } from './BasePage'
+import { User } from '../types/user'
 
 export class RegisterPage extends BasePage {
 
-  async register(user: any) {
+  async register(user: User) {
 
     await this.page.waitForSelector('#input-firstname')
     await this.fill('#input-firstname', user.firstName)

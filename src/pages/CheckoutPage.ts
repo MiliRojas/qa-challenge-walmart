@@ -1,5 +1,6 @@
 import { BasePage } from './BasePage'
 import { expect } from '@playwright/test'
+import { User } from '../types/user'
 
 export class CheckoutPage extends BasePage {
 
@@ -8,7 +9,7 @@ export class CheckoutPage extends BasePage {
     await this.page.waitForSelector('#checkout-checkout')
   }
 
-  async fillBillingDetails(user: any, useExisting = true) {
+  async fillBillingDetails(user: User, useExisting = true) {
       await this.fill('#input-payment-firstname', user.firstName)
       await this.fill('#input-payment-lastname', user.lastName)
       await this.fill('#input-payment-address-1', user.address)

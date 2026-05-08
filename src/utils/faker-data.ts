@@ -1,6 +1,9 @@
 import { faker } from '@faker-js/faker'
+import { User } from '../types/user'
 
-export const createUser = () => ({
+
+export function createUser(): User {
+  return {
   firstName: faker.person.firstName(),
   lastName: faker.person.lastName(),
   email: faker.internet.email(),
@@ -9,4 +12,5 @@ export const createUser = () => ({
   address: faker.location.streetAddress(),
   city: faker.location.city(),
   postcode: faker.location.zipCode()
-})
+}
+}
