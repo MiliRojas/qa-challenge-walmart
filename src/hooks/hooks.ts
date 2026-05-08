@@ -5,7 +5,7 @@ setDefaultTimeout(60000),
 Before(async function () {
 
   this.browser = await chromium.launch({
-    headless: false
+    headless: true
   })
 
   this.context = await this.browser.newContext({
