@@ -1,0 +1,22 @@
+{
+    "name": "qa-challenge-walmart",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "cucumber-js",
+        "report": "ts-node reporter.ts",
+        "test:report": "npm test && npm run report"
+    },
+    "devDependencies": {
+        "@cucumber/cucumber": "^10.8.0",
+        "@faker-js/faker": "^9.0.0",
+        "@playwright/test": "^1.54.0",
+        "@types/node": "^22.0.0",
+        "multiple-cucumber-html-reporter": "^3.10.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "cucumber-html-reporter": "^7.2.0",
+        "faker-js": "^1.0.0"
+    }
+}
