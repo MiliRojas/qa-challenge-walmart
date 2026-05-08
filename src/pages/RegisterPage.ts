@@ -1,5 +1,5 @@
 import { BasePage } from './BasePage'
-import { User } from '../types/user'
+import { User } from '../types/User'
 
 export class RegisterPage extends BasePage {
 

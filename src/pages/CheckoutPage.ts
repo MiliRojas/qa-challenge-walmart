@@ -1,6 +1,6 @@
 import { BasePage } from './BasePage'
 import { expect } from '@playwright/test'
-import { User } from '../types/user'
+import { User } from '../types/User'
 
 export class CheckoutPage extends BasePage {
 
